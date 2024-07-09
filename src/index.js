@@ -10,17 +10,22 @@ document
     const ingredientList = document
       .getElementById("list-ingredients")
       .value.split(",");
-    const ingredients = await fetchIngredients();
+    const comedoingredients = await fetchIngredients();
     let result = "";
 
     ingredientList.forEach((ingredient) => {
       const trimmedIngredient = ingredient.trim().toLowerCase();
-      if (ingredients.includes(trimmedIngredient)) {
-        result += `The ingredient "${trimmedIngredient}" is present in the list. So it is not comedogenic safe.<br>`;
+      if (ingredient == "") {
+        result += `Please enter a list to check.</br>`;
       } else {
-        result += `The ingredient "${trimmedIngredient}" is not present in the list, so it is comedogenic safe.<br>`;
+        if (comedoingredients.includes(trimmedIngredient)) {
+          result += `The ingredient "${trimmedIngredient}" is present in the list. So it is not comedogenic safe.<br>`;
+        } else {
+          result += `The ingredient "${trimmedIngredient}" is not present in the list, so it is comedogenic safe.<br>`;
+        }
       }
     });
 
     document.getElementById("result").innerHTML = result;
   });
+
