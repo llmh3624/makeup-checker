@@ -3,29 +3,32 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Make-up Checker</title>
     <link rel="stylesheet" href="src/styles.css" />
   </head>
   <body>
-    <header>
-      <h1>Make-up Checker</h1>
-      <p>
-        I made this for my girlies and everyone that uses make-up. It checks if
-        a product contains comedogenic ingredients.
-      </p>
-    </header>
-    <main>
-      <label for="list-ingredients"
-        >Please paste the list of ingredients:</label
-      >
-      <textarea id="list-ingredients" rows="15" cols="40"></textarea>
-    </main>
+    <div class="container makeup-container">
+      <header>
+        <h1>Make-up Checker</h1>
+        <p>
+          I made this for my girlies and everyone that uses make-up. It checks
+          if a product contains comedogenic ingredients.
+        </p>
+      </header>
+      <main>
+        <label for="list-ingredients"
+          >Please paste the list of ingredients:</label
+        >
+        <textarea id="list-ingredients" rows="15" cols="40"></textarea>
+        <button id="check-ingredients">Check Ingredients</button>
+      </main>
 
-    <footer>
-      <p>
-        This project was coded by Laura Moragues and open-sourced on GitHub and
-        hosted on Netlify | 2024
-      </p>
-    </footer>
+      <footer>
+        <p>
+          This project was coded by Laura Moragues and <a href="https://github.com/llmh3624/makeup-checker" target="_blank" id="source-link">open-sourced</a> on GitHub
+          and hosted on Netlify | 2024
+        </p>
+      </footer>
+    </div>
   </body>
 </html>
