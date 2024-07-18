@@ -52,7 +52,7 @@ main {
 
 textarea {
   border: 1px solid var(--pinky);
-  border-radius: 10px;
+  border-radius: 4px;
 }
 
 #check-ingredients {
@@ -74,8 +74,14 @@ textarea {
   border: 1px solid --eerie-black;
   color: var(--eerie-black);
 }
+
 #result {
-    margin-top: 2%;
+  margin-top: 2%;
+}
+
+.result-icon {
+  display: block;
+  font-size: 2vw;
 }
 
 footer {
